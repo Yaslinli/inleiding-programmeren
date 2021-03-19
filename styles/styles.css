@@ -1,0 +1,380 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+/* geen border wanneer er geklikt wordt (nadeel voor mensen die geen muis kunnen gebruiken */
+*:focus {
+    outline: 0 !important;
+}
+
+/* achtergrond van de pagina */
+html {
+    background-image: url(/images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* verbergt de h1 want de title staat op achtergrond */
+h1 {
+    display: none;
+}
+
+/* section die over de spel ligt die als startscherm wordt gebruikt */
+.start {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    transition: ease-in 0.3s;
+
+}
+.playerName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    
+}
+#userName{
+    border: black solid 1px;
+    width: 14em;
+    height: 2em;
+    border-radius: 15px;
+}
+
+/* button om spel te starten  */
+.startGame {
+    color: white;
+    font-size: large;
+    font-family: 'Cabin', sans-serif;
+    position: absolute;
+    z-index: 6;
+    height: 3em;
+    width: 12em;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(117, 161, 226);
+    top: 85%;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+.startGame:hover {
+    transform: scale(1.1);
+
+}
+/* de cupcakes op de startscherm */
+.startcakes{
+    position: absolute;
+    display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 13em;
+}
+
+.cupcakestart {
+width: 10em;
+height: 100%;
+transition: ease-in 0.2s;
+}
+
+.cupcakestart:hover{
+    transform: scale(1.1);
+}
+.cake1{
+    width: 9em;
+    margin-right: 3em;
+}
+.cake2{
+    width: 9.5em;
+   margin-right: 2em;
+   margin-top: 2em;
+}
+.cake3{
+    margin-top: 3em;
+
+}
+
+
+/* maakt de startscherm invisible */
+.startInvisible{
+    display: none;
+}
+
+
+/* achtergrond van startscherm */
+.bgstart {
+    width: 100%;
+    height: 100%;
+}
+
+/* positie van de tabbladen */
+.tabAchtergrond {
+    display: block;
+    position: absolute;
+    bottom: 0.5em;
+    width: 50em;
+    height: 13em;
+    border-radius: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/* positie van de keuze buttons */
+.positiekeuzes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+
+}
+
+.keuzeVerdeling {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+/* buttons van de  tabs */
+.button {
+    position: absolute;
+    bottom: 16em;
+    height: 4em;
+    width: 9em;
+    border-radius: 15px 15px 0 0;
+    border: none;
+    cursor: pointer;
+}
+
+.keuzevormen {
+    background-color: rgb(215, 165, 228);
+}
+
+.keuzeCake {
+    background-color: rgb(253, 203, 129);
+}
+
+.keuzeFrosting {
+    background-color: rgb(250, 174, 186);
+}
+
+.keuzeSyrup {
+    background-color: rgb(165, 230, 176);
+}
+
+.keuzeTopping {
+    background-color: rgb(117, 161, 226);
+
+}
+
+/* tab labels van de keuzes */
+.iconkeuze {
+    height: 3em;
+}
+
+
+.tab1 {
+    background-color: rgb(215, 165, 228);
+    left: 30em;
+
+}
+
+.tab2 {
+    background-color: rgb(253, 203, 129);
+    left: 40em;
+}
+
+.tab3 {
+    background-color: rgb(250, 174, 186);
+    left: 50em;
+}
+
+.tab4 {
+    background-color: rgb(165, 230, 176);
+    left: 60em;
+}
+
+.tab5 {
+    background-color: rgb(117, 161, 226);
+    left: 70em;
+}
+
+/* de tab die geklikt wordt */
+.tabFront {
+    z-index: 2;
+
+}
+
+
+/* keuze buttons */
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15em;
+    height: 5em;
+    border-radius: 35px;
+    border: solid white;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* verschijnen en verdwijnen van de cupcake images */
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* geselecteerde keuze krijgt border */
+.selected {
+    border: solid palevioletred;
+}
+
+/* positie van de img van alle onderdelen van de cupcakes */
+
+
+.vormImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cakeImg {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frostingImg {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.syrupImg {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toppingImg {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 20%;
+
+}
+
+/* grootte van de cupcake vorm */
+.vormImg img {
+    width: 10em;
+}
+
+/* grootte van de cake */
+.cakeImg img {
+    width: 14em;
+}
+
+/* grootte van de frosting */
+.frostingImg img {
+    width: 13em;
+}
+
+/* grootte van de syrup */
+.syrupImg img {
+    width: 10em;
+}
+
+/* grootte van de toppings */
+.toppingImg img {
+    width: 10em;
+}
+
+/* posities van niet evengrootte toppings */
+.toppingOreo {
+    margin-top: 3em;
+    margin-right: 1em;
+}
+
+.toppingSprinkles {
+    margin-top: 9em;
+}
+
+.toppingCherry {
+    margin-bottom: 4em;
+}
+
+.voorbeeldicon {
+    height: 2.5em;
+    max-width: 4em;
+}
+
+/* positie en style van de redo button */
+.refresh {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 80%;
+    top: 80%;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(255, 179, 117);
+    cursor: pointer;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+.redoimg {
+    width: 4em;
+    background-color: rgb(255, 179, 117);
+}
+
+/* positie en styling van de finished button */
+.finished {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 90%;
+    top: 80%;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(88, 172, 113);
+    cursor: pointer;
+    color: white;
+    
+}
+
+/* .finishedimg {
+    width: 4em;
+    background-color: rgb(88, 172, 113);
+} */

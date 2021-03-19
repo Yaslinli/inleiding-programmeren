@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles//styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+<!-- start pagina -->
+        <section class="start">
+            <h1>The CupCake Maker</h1>
+            <div class="playerName">
+
+                <p class="userMessage">Hi! What is your name?</p>
+                <input type="text" id="userName" placeholder="enter name">
+
+            </div>
+
+            <button class="startGame">START</button>
+            <div class="startcakes">
+                <img class="cupcakestart cake1" src="images/cupcake1.png" alt="">
+                <img class="cupcakestart cake2" src="images/cupcake2.png" alt="">
+                <img class="cupcakestart cake3" src="images/cupcake3.png" alt="">
+
+            </div>
+
+            <img class="bgstart" src="images//bgstart.png" alt="">
+        </section>
+        <!-- de images van de cupcakes -->
+        <section class="cupcakeImg">
+
+            <div class="vormImg">
+                <img class="vormPink invisible " src="images//pink.png" alt="">
+                <img class="vormBlue invisible " src="images//blue.png" alt="">
+                <img class="vormGreen invisible" src="images//green.png" alt="">
+                <img class="vormYellow invisible " src="images//yellow.png" alt="">
+            </div>
+            <div class="cakeImg">
+                <img class="cakeStrawberry invisible " src="images//cakeStrawberry.png" alt="">
+                <img class="cakeChocolate invisible " src="images//cakeChocolate.png" alt="">
+                <img class="cakeVanilla invisible" src="images//cakevanilla.png" alt="">
+                <img class="cakeRedvelvet invisible " src="images//cakeRedvelvet.png" alt="">
+            </div>
+            <div class="frostingImg">
+                <img class="frostingStrawberry invisible " src="images//frostingStrawberry.png" alt="">
+                <img class="frostingChocolate invisible " src="images//frostingChocolate.png" alt="">
+                <img class="frostingMocha invisible " src="images//frostingMocha.png" alt="">
+                <img class="frostingBlueberry invisible " src="images//frostingBlueberry.png" alt="">
+            </div>
+            <div class="syrupImg">
+                <img class="syrupStrawberry invisible " src="images//syrupStrawberry.png" alt="">
+                <img class="syrupChocolate invisible " src="images//syrupChocolate.png" alt="">
+                <img class="syrupCaramel invisible " src="images//syrupCaramel.png" alt="">
+                <img class="syrupSmurfen invisible " src="images//syrupsmurfen.png" alt="">
+
+            </div>
+            <div class="toppingImg">
+                <img class="toppingStrawberry invisible " src="images//strawberryTopping.png" alt="">
+                <img class="toppingOreo invisible " src="images//oreoTopping.png" alt="">
+                <img class="toppingCherry invisible " src="images//toppingCherries.png" alt="">
+                <img class="toppingSprinkles invisible " src="images//sprinklesTopping.png" alt="">
+            </div>
+        </section>
+<!-- tabs om van categorie te veranderen  -->
+<!-- tabs en keuzes van de vorm -->
+        <div class="tabs">
+            <section class="tabVorm ">
+                <button class="button tab1 "><img class="iconkeuze tab1" src="images//vormicon.png" alt=""></button>
+                <div class="keuzevormen tabAchtergrond tabFront">
+                    <div class="positiekeuzes">
+                        <div class="keuzeVerdeling">
+                            <button class="keuzepink buttons"><img class="keuzepink voorbeeldicon"
+                                    src="images//pink.png" alt="">Pink Liner</button>
+                            <button class="keuzeblue buttons"><img class="keuzeblue voorbeeldicon"
+                                    src="images//blue.png" alt="">Blue Liner</button>
+                        </div>
+                        <div class="keuzeVerdeling">
+                            <button class="keuzegreen buttons"><img class="keuzegreen voorbeeldicon"
+                                    src="images//green.png" alt="">Green Liner</button>
+                            <button class="keuzeyellow buttons"><img class="keuzeyellow voorbeeldicon"
+                                    src="images//yellow.png" alt="">Yellow Liner</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- tabs en keuzez van de cake smaken -->
+            <section class="tabCake">
+                <button class="button tab2"><img class="iconkeuze tab2" src="images//cakeicon.png" alt=""></button>
+                <div class="keuzeCake tabAchtergrond">
+                    <div class="positiekeuzes">
+                        <div class="keuzeVerdeling">
+                            <button class="chocolateKeuze buttons"><img class="chocolateKeuze voorbeeldicon"
+                                    src="images//cakeChocolate.png" alt="">Chocolate Cake</button>
+                            <button class="aardbeiKeuze buttons"><img class="strawberryKeuze voorbeeldicon"
+                                    src="images//cakeStrawberry.png" alt="">Strawberry Cake</button>
+                        </div>
+                        <div class="keuzeVerdeling">
+                            <button class="vanillaKeuze buttons"><img class="vanillaKeuze voorbeeldicon"
+                                    src="images//cakevanilla.png" alt="">Vanilla Cake</button>
+                            <button class="redvelvetKeuze buttons"><img class="redvelvetKeuze voorbeeldicon"
+                                    src="images//cakeredvelvet.png" alt="">Redvelvet Cake</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- tabs en keuzes van de frosting smaken -->
+            <section class="tabFrosting">
+                <button class="button tab3"><img class="iconkeuze tab3" src="images//frostingicon.png" alt=""></button>
+                <div class="keuzeFrosting tabAchtergrond">
+                    <div class="positiekeuzes">
+                        <div class="keuzeVerdeling">
+                            <button class="chocolateFrostingKeuze buttons"><img
+                                    class="chocolateFrostingKeuze voorbeeldicon" src="images//frostingChocolate.png"
+                                    alt="">Chocolate Frosting</button>
+                            <button class="aardbeiFrostingKeuze buttons"><img class="aardbeiFrostingKeuze voorbeeldicon"
+                                    src="images//frostingStrawberry.png" alt="">Strawberry Frosting</button>
+                        </div>
+                        <div class="keuzeVerdeling">
+                            <button class="blueberryFrostingKeuze buttons"><img
+                                    class="blueberryFrostingKeuze voorbeeldicon" src="images//frostingBlueberry.png"
+                                    alt="">Blueberry Frosting</button>
+                            <button class="mochaFrostingKeuze buttons"><img class="mochaFrostingKeuze voorbeeldicon"
+                                    src="images//frostingMocha.png" alt="">Mocha Frosting</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- tabs ven de keuzes van de syrups smaken -->
+            <section class="tabSyrup">
+                <button class="button tab4"><img class="iconkeuze tab4" src="images//syrupicon.png" alt=""></button>
+                <div class="keuzeSyrup tabAchtergrond">
+                    <div class="positiekeuzes">
+                        <div class="keuzeVerdeling">
+                            <button class="chocolateSyrupKeuze buttons"><img class="chocolateSyrupKeuze voorbeeldicon"
+                                    src="images//syrupChocolate.png" alt="">Chocolate Syrup</button>
+                            <button class="aardbeiSyrupKeuze buttons"><img class="aardbeiSyrupKeuze voorbeeldicon"
+                                    src="images//syrupStrawberry.png" alt="">Strawberry Syrup </button>
+                        </div>
+                        <div class="keuzeVerdeling">
+                            <button class="caramelSyrupKeuze buttons"><img class="caramelSyrupKeuze voorbeeldicon"
+                                    src="images//syrupCaramel.png" alt="">Caramel Syrup</button>
+                            <button class="smurfenSyrupKeuze buttons"><img class="smurfenSyrupKeuze voorbeeldicon"
+                                    src="images//syrupsmurfen.png" alt="">Smurfen Syrup</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- tabs en de keuzes van de toppings -->
+            <section class="tabTopping">
+                <button class="button tab5"><img class="iconkeuze tab5" src="images//toppingicon.png" alt=""></button>
+                <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                <div class="keuzeTopping tabAchtergrond">
+                    <div class="positiekeuzes">
+                        <div class="keuzeVerdeling">
+                            <button class="oreoKeuze buttons"><img class="oreoKeuze voorbeeldicon"
+                                    src="images//oreoicon.png" alt="">oreo's</button>
+                                    <!-- https://www.pngitem.com/middle/ixowwow_oreo-cartoon-png-transparent-png/ -->
+                            <button class="strawberriesKeuze buttons"><img class="strawberriesKeuze voorbeeldicon"
+                                    src="images//strawberryicon.png" alt="">strawberries</button>
+                                    <!-- https://pngtree.com/so/strawberry-clipart -->
+                        </div>
+                        <div class="keuzeVerdeling">
+                            <button class="cherryKeuze buttons"><img class="cherryKeuze voorbeeldicon"
+                                    src="images//cherryicon.png" alt="">cherries</button>
+                                    <!-- https://pngtree.com/freepng/cartoon-red-cherry-illustration_4747665.html -->
+                            <button class="sprinklesKeuze buttons"><img class="sprinklesKeuze voorbeeldicon"
+                                    src="images//sprinklesTopping.png" alt="">sprinkles</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- button om opnieuw te beginnen -->
+            <button class="refresh tab1"><img class="redoimg tab1" src="images//redo.png" alt=""> Start Over</button>
+            <!-- button voor als je klaar bent -->
+            <!-- <button class="finished"><img class="finishedimg " src="images//finished.png" alt=""> Finished!</button> -->
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="js//script.js"></script>
+
+</html>
